@@ -1,0 +1,26 @@
+{
+  "current": {
+    "sourceName": "ABS Regulations, 2025",
+    "effectiveFrom": "2025-04-29",
+    "verifyNote": "Effective date shown is approximate — confirm the exact NBA notification date against the primary gazette text before production use.",
+    "slabs": [
+      { "turnoverMin": 0, "turnoverMax": 50000000, "ratePercent": 0, "label": "Up to \u20b95 crore" },
+      { "turnoverMin": 50000001, "turnoverMax": 500000000, "ratePercent": 0.2, "label": "\u20b95\u201350 crore" },
+      { "turnoverMin": 500000001, "turnoverMax": 2500000000, "ratePercent": 0.4, "label": "\u20b950\u2013250 crore" },
+      { "turnoverMin": 2500000001, "turnoverMax": null, "ratePercent": 0.6, "label": "Above \u20b9250 crore" }
+    ],
+    "cultivatedPlantExemption": true,
+    "registeredPractitionerExemption": true,
+    "ipLicensingNote": "A separate benefit-sharing percentage applies when licensing/assigning IP built on accessed biological resources. Do not hardcode a specific figure in the calculator without re-verifying it against the primary 2025 notification text."
+  },
+  "superseded": {
+    "sourceName": "Guidelines on Access to Biological Resources and Associated Knowledge and Benefits Sharing Regulations, 2014 (G.S.R. 827(E))",
+    "effectiveUntil": "2025-04-29",
+    "slabs": [
+      { "turnoverMin": 0, "turnoverMax": 10000000, "ratePercent": 0.1, "label": "Up to \u20b91 crore" },
+      { "turnoverMin": 10000001, "turnoverMax": 30000000, "ratePercent": 0.2, "label": "\u20b91\u20133 crore" },
+      { "turnoverMin": 30000001, "turnoverMax": null, "ratePercent": 0.5, "label": "Above \u20b93 crore" }
+    ],
+    "supersededByNote": "Replaced by the 2025 ABS Regulations shown above. This block exists ONLY to power the Time-Aware Legal Grounding demo (the superseded-law reveal) — never offer this as a live calculator option."
+  }
+}

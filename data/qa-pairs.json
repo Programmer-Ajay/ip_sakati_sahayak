@@ -1,0 +1,91 @@
+[
+  {
+    "id": "qa-ashwagandha-3p",
+    "queryKeywords": ["ashwagandha", "withania", "stress", "patent", "extract"],
+    "jurisdiction": "india",
+    "classification": "new",
+    "answerText": "The claims relate to an extract of the Withania plant. Prior art in TKDL discloses use of Withania somnifera roots for the treatment of stress-related disorders in Ayurveda and Unani systems of medicine. Based on this, the subject matter is not considered novel over the teaching of prior art obtained from TKDL.",
+    "citations": [
+      { "actName": "The Patents Act, 1970", "sectionOrRule": "Section 3(p)", "validFrom": "1970-04-19" },
+      { "actName": "CGPDTM Guidelines for Processing of Patent Applications Relating to Traditional Knowledge and Biological Material", "sectionOrRule": "Guiding Principle 1, Illustration 1" }
+    ],
+    "confidence": "High",
+    "escalationRecommended": false
+  },
+  {
+    "id": "qa-chamomile-3p",
+    "queryKeywords": ["chamomile", "chamaemeloside", "isolated", "alkaloid", "patent"],
+    "jurisdiction": "india",
+    "classification": "new",
+    "answerText": "Prior art discloses use of German chamomile (from which Chamaemeloside is derived) for wound healing and for treatment of cancer, diabetes, arthritis and eczema in Ayurveda and Unani medicine, though it does not disclose Chamaemeloside itself. The prior art motivates a person skilled in the art to isolate the active ingredient, so isolation and characterization alone does not involve an inventive step.",
+    "citations": [
+      { "actName": "The Patents Act, 1970", "sectionOrRule": "Section 3(p)", "validFrom": "1970-04-19" },
+      { "actName": "CGPDTM Guidelines for Processing of Patent Applications Relating to Traditional Knowledge and Biological Material", "sectionOrRule": "Guiding Principle 1, Illustration 2" }
+    ],
+    "confidence": "High",
+    "escalationRecommended": false
+  },
+  {
+    "id": "qa-wound-composition-obvious",
+    "queryKeywords": ["calendula", "aloe vera", "centella", "wound", "composition", "combination"],
+    "jurisdiction": "india",
+    "classification": "proprietary",
+    "answerText": "Independent use of each of these three plants for wound treatment is already disclosed in Ayurveda and Unani medicine. A combination of a plant with known therapeutic effect with further plants of the same known therapeutic effect, all previously known for treating the same condition, is considered an obvious combination.",
+    "citations": [
+      { "actName": "The Patents Act, 1970", "sectionOrRule": "Section 3(p)", "validFrom": "1970-04-19" },
+      { "actName": "CGPDTM Guidelines for Processing of Patent Applications Relating to Traditional Knowledge and Biological Material", "sectionOrRule": "Guiding Principle 2, Illustration 1" }
+    ],
+    "confidence": "Medium",
+    "escalationRecommended": false
+  },
+  {
+    "id": "qa-abs-practitioner-exemption",
+    "queryKeywords": ["nba", "approval", "practitioner", "cultivated", "vaid", "hakim", "exempt"],
+    "jurisdiction": "india",
+    "classification": null,
+    "answerText": "No prior intimation to the State Biodiversity Board is required for local people and communities, cultivators, and vaids, hakims and registered AYUSH practitioners using indigenous medicine \u2014 provided that, for cultivated medicinal plants specifically, a certificate of origin is obtained from the Biodiversity Management Committee.",
+    "citations": [
+      { "actName": "The Biological Diversity Act, 2002 (as amended 2023)", "sectionOrRule": "Section 7(1) proviso and Section 7(2)", "validFrom": "2023-08-03" },
+      { "actName": "The Biological Diversity (Amendment) Rules, 2025", "sectionOrRule": "Rule 19", "validFrom": "2025-11-01",
+        "supersededBy": null }
+    ],
+    "confidence": "High",
+    "escalationRecommended": false
+  },
+  {
+    "id": "qa-codified-tk-definition",
+    "queryKeywords": ["codified", "traditional knowledge", "definition", "what counts"],
+    "jurisdiction": "india",
+    "classification": "classical",
+    "answerText": "Codified traditional knowledge means the knowledge derived from authoritative books specified in the First Schedule to the Drugs and Cosmetics Act, 1940 \u2014 this is the legal test for whether a formulation counts as \u2018classical.\u2019",
+    "citations": [
+      { "actName": "The Biological Diversity (Amendment) Act, 2023", "sectionOrRule": "Section 2(ea)", "validFrom": "2023-08-03" }
+    ],
+    "confidence": "High",
+    "escalationRecommended": false
+  },
+  {
+    "id": "qa-abs-turnover-fee",
+    "queryKeywords": ["abs", "benefit sharing", "fee", "turnover", "how much", "liability", "owe"],
+    "jurisdiction": "india",
+    "classification": null,
+    "answerText": "__COMPUTE_VIA_ABS_CALCULATOR__",
+    "citations": [
+      { "actName": "ABS Regulations, 2025", "sectionOrRule": "Turnover-based benefit-sharing slabs", "validFrom": "2025-04-29",
+        "supersededBy": { "actName": "Guidelines on Access to Biological Resources and Associated Knowledge and Benefits Sharing Regulations, 2014", "sectionOrRule": "Regulation 4", "effectiveDate": "2025-04-29", "supersededNote": "The 2014 rate (0.1\u20130.5% at \u20b91\u2013crore breakpoints) was replaced by the 2025 rate (0.2\u20130.6% at \u20b95\u2013crore breakpoints) shown here." }
+      }
+    ],
+    "confidence": "High",
+    "escalationRecommended": false
+  },
+  {
+    "id": "qa-out-of-scope-example",
+    "queryKeywords": ["trademark registration cost usa", "unrelated", "random"],
+    "jurisdiction": "international",
+    "classification": null,
+    "answerText": "This falls outside the scope of what this corpus currently covers with confidence. Rather than guess, this has been flagged for a human IP facilitator.",
+    "citations": [],
+    "confidence": "Low",
+    "escalationRecommended": true
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "classical",
+    "label": "Classical / Generic",
+    "description": "Formulation and method drawn from a First-Schedule authoritative text. Largely traditional knowledge; faces the Section 3(p) patent bar; defended via TKDL.",
+    "inferenceKeywords": ["classical", "traditional recipe", "ancient text", "charaka", "sushruta", "as described in", "first schedule"]
+  },
+  {
+    "id": "proprietary",
+    "label": "Proprietary Medicine",
+    "description": "A named, marketed Ayurvedic medicine not drawn wholesale from a classical text, typically a branded combination product.",
+    "inferenceKeywords": ["proprietary", "branded", "our formulation", "combination of", "blend"]
+  },
+  {
+    "id": "new",
+    "label": "New / Non-classical Drug",
+    "description": "Requires proof of safety and effectiveness; genuine patent potential if it clears Section 3(p) and 3(e).",
+    "inferenceKeywords": ["new formulation", "novel", "discovered", "extract", "isolated", "invented", "patent this"]
+  },
+  {
+    "id": "phytopharmaceutical",
+    "label": "Phytopharmaceutical",
+    "description": "A plant-derived drug with a defined, standardized composition; a distinct regulatory category under the New Drugs and Clinical Trial Rules, 2019.",
+    "inferenceKeywords": ["phytopharmaceutical", "standardized extract", "clinical trial", "defined composition"]
+  },
+  {
+    "id": "nutraceutical",
+    "label": "Ayurveda-Aahar / Nutraceutical",
+    "description": "Regulated as a food under FSSAI's Ayurveda-Aahar regulations, not as a drug.",
+    "inferenceKeywords": ["supplement", "nutraceutical", "food product", "health drink", "aahar"]
+  },
+  {
+    "id": "cosmetic",
+    "label": "Cosmetic",
+    "description": "Regulated under the cosmetic provisions of the Drugs and Cosmetics Act, 1940, not its drug provisions.",
+    "inferenceKeywords": ["cosmetic", "face cream", "skin cream", "hair oil", "soap", "lotion"]
+  }
+]

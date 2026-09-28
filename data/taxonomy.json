@@ -1,0 +1,23 @@
+{
+  "entries": [
+    { "localNames": ["ashwagandha", "winter cherry"], "botanicalName": "Withania somnifera", "family": "Solanaceae", "regionalNote": null },
+    { "localNames": ["tulsi", "holy basil"], "botanicalName": "Ocimum sanctum (syn. Ocimum tenuiflorum)", "family": "Lamiaceae", "regionalNote": null },
+    { "localNames": ["haldi", "turmeric"], "botanicalName": "Curcuma longa", "family": "Zingiberaceae", "regionalNote": null },
+    { "localNames": ["neem"], "botanicalName": "Azadirachta indica", "family": "Meliaceae", "regionalNote": null },
+    { "localNames": ["guduchi", "giloy"], "botanicalName": "Tinospora cordifolia", "family": "Menispermaceae", "regionalNote": null },
+    { "localNames": ["brahmi"], "botanicalName": "Ambiguous \u2014 see regionalNote", "family": null,
+      "regionalNote": "\"Brahmi\" refers to two different plants depending on region and text: Bacopa monnieri (most common in North Indian use and most classical formulations) or Centella asiatica (Mandukaparni, used as \"Brahmi\" in some South Indian traditions). Flag this to the user rather than silently guessing which one is meant \u2014 this is a genuine, well-documented naming ambiguity, not a data gap." },
+    { "localNames": ["amla", "indian gooseberry"], "botanicalName": "Phyllanthus emblica (syn. Emblica officinalis)", "family": "Phyllanthaceae", "regionalNote": null },
+    { "localNames": ["shatavari"], "botanicalName": "Asparagus racemosus", "family": "Asparagaceae", "regionalNote": null },
+    { "localNames": ["arjuna"], "botanicalName": "Terminalia arjuna", "family": "Combretaceae", "regionalNote": null },
+    { "localNames": ["haritaki"], "botanicalName": "Terminalia chebula", "family": "Combretaceae", "regionalNote": null },
+    { "localNames": ["bibhitaki", "baheda"], "botanicalName": "Terminalia bellirica", "family": "Combretaceae", "regionalNote": null },
+    { "localNames": ["manjistha"], "botanicalName": "Rubia cordifolia", "family": "Rubiaceae", "regionalNote": null },
+    { "localNames": ["punarnava"], "botanicalName": "Boerhavia diffusa", "family": "Nyctaginaceae", "regionalNote": null },
+    { "localNames": ["methi", "fenugreek"], "botanicalName": "Trigonella foenum-graecum", "family": "Fabaceae", "regionalNote": null },
+    { "localNames": ["vacha"], "botanicalName": "Acorus calamus", "family": "Acoraceae", "regionalNote": null },
+    { "localNames": ["triphala"], "botanicalName": "A compound of three fruits, not a single plant: Haritaki (Terminalia chebula), Bibhitaki (Terminalia bellirica), and Amla (Phyllanthus emblica).", "family": null,
+      "regionalNote": "This is a compound formulation, not a single botanical entity \u2014 the UI should flag this distinctly rather than forcing it into a single botanicalName field." }
+  ],
+  "note": "Small hand-curated demo sample (16 entries). Production ingestion should pull the full mapping from the Ayurvedic Pharmacopoeia of India / API-ASU pharmacopoeial standards, not this list."
+}

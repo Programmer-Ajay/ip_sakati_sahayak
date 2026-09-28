@@ -1,0 +1,17 @@
+{
+  "actName": "The Drugs and Cosmetics Act, 1940",
+  "sectionReference": "Section 3(a), First Schedule, Part A — Ayurvedic and Siddha Systems",
+  "status": "PARTIAL — verified extraction only. Do not present as the complete list in a live demo without running the full corrected pipeline.",
+  "verifiedEntries": [
+    { "no": 1, "name": "Arogya Kalpadruma" },
+    { "no": 2, "name": "Arka Prakasha" },
+    { "no": 29, "name": "Sarvaroga Chikitsa Ratnam" }
+  ],
+  "wellKnownEntriesPendingVerification": [
+    "Charaka Samhita",
+    "Sushruta Samhita",
+    "Ashtanga Hridaya",
+    "Bhaishajya Ratnavali"
+  ],
+  "note": "These four are commonly cited classical Ayurveda texts and are very likely on the full First Schedule, but were not individually confirmed in the sample extraction pass. Re-run the column-order-corrected extraction from The_Drugs_and_Cosmetics_Act__1940.pdf and replace this file with the full ~50-60 entry list before final submission."
+}
