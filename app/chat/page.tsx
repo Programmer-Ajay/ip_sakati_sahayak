@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import type {
   ChatMessage,
@@ -53,8 +53,18 @@ export default function ChatPage() {
   const [pendingQuery, setPendingQuery] = useState<string | null>(null);
   const [isThinking, setIsThinking] = useState(false);
   const [inputValue, setInputValue] = useState("");
-  const [leftPanelOpen, setLeftPanelOpen] = useState(true);
+  const [leftPanelOpen, setLeftPanelOpen] = useState(false);
   const inputRef = useRef<HTMLTextAreaElement>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && leftPanelOpen) {
+        setLeftPanelOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [leftPanelOpen]);
 
   const append = (msg: ChatMessage) =>
     setMessages((prev) => [...prev, msg]);
@@ -210,26 +220,48 @@ export default function ChatPage() {
 
   return (
     <div className="app-shell">
-      {/* ───── CHAT GLOBAL NAV ───── */}
+      {/* ───── CHAT GLOBAL NAV (Desktop only) ───── */}
       <div className="chat-global-nav">
         <Link href="/" className="back-link">
           <span aria-hidden="true">←</span> Back to Home
         </Link>
       </div>
 
-      {/* ───── LEFT PANEL (About / Features) ───── */}
+      {/* ───── MOBILE BACKDROP OVERLAY ───── */}
+      {leftPanelOpen && (
+        <div
+          className="sidebar-backdrop"
+          onClick={() => setLeftPanelOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+
+      {/* ───── LEFT PANEL (About / Features Drawer on Mobile, Sidebar on Desktop) ───── */}
       <aside className={`left-panel ${leftPanelOpen ? "left-panel--open" : ""}`} id="left-panel">
-        {/* Mobile toggle */}
-        <button
-          className="left-panel__mobile-toggle"
-          onClick={() => setLeftPanelOpen((v) => !v)}
-          aria-expanded={leftPanelOpen}
-          aria-controls="left-panel"
-        >
-          {leftPanelOpen ? "✕ Close Menu" : "☰ Menu"}
-        </button>
+        {/* Mobile Drawer Header */}
+        <div className="left-panel__mobile-header">
+          <div className="left-panel__brand-mini">
+            <span className="left-panel__logo-mini" aria-hidden="true">⚖</span>
+            <span className="left-panel__title-mini">IP-SAKTI Sahayak</span>
+          </div>
+          <button
+            className="left-panel__close-btn"
+            onClick={() => setLeftPanelOpen(false)}
+            aria-label="Close menu"
+          >
+            ✕
+          </button>
+        </div>
 
         <div className="left-panel__content">
+          <Link
+            href="/"
+            className="left-panel__home-link"
+            onClick={() => setLeftPanelOpen(false)}
+          >
+            <span aria-hidden="true">←</span> Back to Homepage
+          </Link>
+
           {/* Brand */}
           <div className="left-panel__brand">
             <span className="left-panel__logo" aria-hidden="true">⚖</span>
@@ -296,10 +328,15 @@ export default function ChatPage() {
             <button
               className="app-header__menu-btn"
               onClick={() => setLeftPanelOpen((v) => !v)}
-              aria-label="Toggle about panel"
+              aria-label="Toggle menu"
             >
-              ☰ Menu
+              <span className="menu-btn-icon" aria-hidden="true">☰</span>
+              <span className="menu-btn-text">Menu</span>
             </button>
+            <Link href="/" className="app-header__back-btn" title="Back to Homepage">
+              <span aria-hidden="true">←</span>
+              <span className="back-btn-text">Home</span>
+            </Link>
           </div>
           <div className="app-header__controls">
             {/* Jurisdiction Toggle */}

@@ -66,27 +66,32 @@ export default function CitedAnswerCard({
       <div className="cited-answer-card__actions">
         <button
           id="open-pathway-engine"
-          className="btn-secondary"
+          className="btn-action-tool btn-pathway"
           onClick={onOpenPathwayEngine}
           title="View recommended IP protection pathways"
         >
-          IP Pathway Analysis
+          <span className="btn-action-icon" aria-hidden="true">🧭</span>
+          <span className="btn-action-label">Patent Pathway Recommendation</span>
+          <span className="btn-action-arrow" aria-hidden="true">→</span>
         </button>
         <button
           id="open-abs-calculator"
-          className="btn-secondary"
+          className="btn-action-tool btn-abs"
           onClick={onOpenABSCalculator}
           title="Calculate ABS benefit-sharing fee estimate"
         >
-          ABS Calculator
+          <span className="btn-action-icon" aria-hidden="true">💰</span>
+          <span className="btn-action-label">ABS Calculator</span>
+          <span className="btn-action-arrow" aria-hidden="true">→</span>
         </button>
         {(data.escalationRecommended) && (
           <button
             id="escalate-btn"
-            className="btn-escalate"
+            className="btn-action-tool btn-escalate"
             onClick={onEscalate}
           >
-            Escalate to Human Facilitator
+            <span className="btn-action-icon" aria-hidden="true">👤</span>
+            <span className="btn-action-label">Escalate to Human Facilitator</span>
           </button>
         )}
       </div>
